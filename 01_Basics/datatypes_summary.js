@@ -41,5 +41,30 @@ console.log(typeof drivers); // object as well
 console.log(typeof obj); // object
 console.log(typeof myFunction); // object function
 
+// ************************************************
+
+// Stack(Primitive), Heap (Non-Primitive)
+
+let myName = "VishakhanPillai"
+let anotherName = myName;
+anotherName = "EthanHunt"
+
+console.log(myName);
+console.log(anotherName);
+
+let user = {
+    emaii: "user@gmail.com",
+    upi: "user@okicici"
+}
+
+let user2 = user
+
+user2.emaii = "vishakhan@google.com"
+
+console.log(user.emaii);
+console.log(user2.emaii);
+
+
+
 
 
