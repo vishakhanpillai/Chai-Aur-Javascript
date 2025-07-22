@@ -45,9 +45,19 @@ const users = [
     }
 ]
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('nae'));
+// console.log(tinderUser.hasOwnProperty('nae'));
+
+const course = {
+    coursename : "JS in Hindi",
+    price : "999",
+    courseInstructor : "Hitesh Choudhary"
+}
+
+const {courseInstructor: instructor} = course //De - structuring Objects
+
+console.log(instructor);
