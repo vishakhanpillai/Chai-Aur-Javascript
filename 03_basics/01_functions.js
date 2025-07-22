@@ -47,4 +47,36 @@ function loginUserMessage(username = "vishakhan"){
 
 //console.log(loginUserMessage()); // if a function is called without any arguments, it becomes undefined
 
-console.log(loginUserMessage());
+//console.log(loginUserMessage());
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+//In this scenario the first value 200 will go to val1 and second value 400 will go to val2 and rest 500 and 200 will become an array [500, 2000]
+
+const user = {
+    username:"vishakhan",
+    price:199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+handleObject({
+    username : "ethan", 
+    price : 399
+}) 
+
+const myNewArray = [200, 500, 700, 100]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 100, 500, 699]))
+
